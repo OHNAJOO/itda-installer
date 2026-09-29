@@ -1,0 +1,7 @@
+build/
+dist/
+launcher/bin/
+launcher/obj/
+.vs/
+*.user
+__pycache__/

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Itda.Launcher</RootNamespace>
+    <AssemblyName>ITDA</AssemblyName>
+    <ApplicationIcon>..\assets\generated\itda.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <Product>잇다</Product>
+    <Description>잇다 실행기</Description>
+    <Version>1.0.0</Version>
+
+    <!-- 사용자 PC에 .NET이 없어도 되도록 런타임을 포함한 exe 하나로 만든다 -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>embedded</DebugType>
+    <SatelliteResourceLanguages>ko</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\assets\generated\itda.ico" LogicalName="itda.ico" />
+    <EmbeddedResource Include="..\assets\generated\itda-256.png" LogicalName="itda-256.png" />
+  </ItemGroup>
+
+</Project>
